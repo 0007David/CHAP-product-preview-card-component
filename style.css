@@ -20,25 +20,31 @@
 
 body {
     background: var(--clr-neutral-Cream);
+    font-family: "Montserrat", sans-serif;
+
 }
 
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     width: 70%;
-    margin: 0 auto;
+    margin: 3rem auto;
 
-    background-color: red;
     height: 100vh;
-    min-width: 300px;
+    max-width: 353px;
+    min-width: 353px;
+    border-radius: 10px;
 }
 
 .perfume-img {
-    width: 300px;
+    width: 353px;
     /* height: 350px; */
     /* min-width: 150px; */
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .desktop-only {
@@ -48,7 +54,63 @@ main {
 .section-info {
     display: flex;
     flex-direction: column;
+    gap: 1.3rem;
+    /* align-items: center; */
+    background-color: var(--clr-neutral-White);
+    padding: 2rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.product-type {
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    color: var(--clr-neutral-Grey);
+    font-weight: 500;
+    /* border: 1px solid lightgreen; */
+}
+
+.product-name {
+    /* border: 1px solid lightgreen; */
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    line-height: 2.3rem;
+    color: var(--clr-neutral-Black);
+}
+
+.product-detail {
+    /* border: 1px solid lightgreen; */
+    color: var(--clr-neutral-Grey);
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.price {
+    display: flex;
     align-items: center;
+    font-family: "Fraunces", serif;
+    font-size: 2.1rem;
+    color: var(--clr-primary-Green500);
+    /* border: 1px solid lightgreen; */
+}
+
+.price>span {
+    margin-left: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: .9rem;
+    font-weight: 600;
+    text-decoration: line-through;
+    color: var(--clr-neutral-Grey);
+}
+
+button {
+    border: none;
+    background: var(--clr-primary-Green500);
+    color: var(--clr-neutral-White);
+    padding: .9rem 0;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 @media (min-width: 850px) {
