@@ -1,22 +1,78 @@
-* {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+:root {
+    --clr-primary-Green500: hsl(158, 36%, 37%);
+    --clr-primary-Green700: hsl(158, 42%, 18%);
+
+    --clr-neutral-Black: hsl(212, 21%, 14%);
+    --clr-neutral-Grey: hsl(228, 12%, 48%);
+    --clr-neutral-Cream: hsl(30, 38%, 92%);
+    --clr-neutral-White: hsl(0, 0%, 100%);
+
+    --fs-body: 14px;
+}
+
+body {
+    background: var(--clr-neutral-Cream);
+}
+
 main {
     display: flex;
-
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
+
+    background-color: red;
+    height: 100vh;
+    min-width: 300px;
+}
+
+.perfume-img {
+    width: 300px;
+    /* height: 350px; */
+    /* min-width: 150px; */
+}
+
+.desktop-only {
+    display: none;
 }
 
 .section-info {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@media (min-width: 850px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        max-width: 750px;
+    }
+
+    .perfume-img {
+        width: auto;
+        /* height: 350px; */
+        /* min-width: none; */
+    }
+
+    .mobile-only {
+        display: none;
+    }
+
+    .desktop-only {
+        display: inline;
+
+    }
+
 }
 
 /* .attribution {
