@@ -3,3 +3,5 @@
 -- Dificultades
 
 como poner imagen dos version una movil y otra desktop
+me costo definir los width de cada flex Item por eran fluido no podia encontrar el width adecuado
+como agregar un icono .svg
