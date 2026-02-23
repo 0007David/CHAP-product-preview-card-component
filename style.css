@@ -29,7 +29,7 @@ main {
     display: flex;
     flex-direction: column;
     margin: 3rem auto;
-    max-width: 353px;
+    max-width: 22rem;
     border-radius: 10px;
 }
 
@@ -83,7 +83,7 @@ main {
 }
 
 .price>span {
-    margin-left: 1rem;
+    margin-inline-start: 1rem;
     font-family: "Montserrat", sans-serif;
     font-size: .9rem;
     font-weight: 600;
