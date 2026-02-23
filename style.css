@@ -28,14 +28,8 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
     margin: 3rem auto;
-
-    height: 100vh;
     max-width: 353px;
-    min-width: 353px;
     border-radius: 10px;
 }
 
@@ -77,6 +71,7 @@ main {
     color: var(--clr-neutral-Grey);
     font-size: .9rem;
     font-weight: 500;
+    line-height: 1.4rem;
 }
 
 .price {
@@ -118,6 +113,16 @@ button:active {
 }
 
 @media (min-width: 54rem) {
+
+    html,
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
     main {
         display: flex;
         flex-direction: row;
@@ -129,7 +134,7 @@ button:active {
         border-bottom-left-radius: 10px;
         border-top-right-radius: 0;
         width: 50%;
-        height: 27.834rem;
+        height: 28.94rem;
     }
 
     .mobile-only {
@@ -142,10 +147,16 @@ button:active {
     }
 
     .section-info {
+        padding: 2rem;
         width: 48%;
         border-bottom-left-radius: 0;
         border-top-right-radius: 10px;
     }
+
+    .product-name {
+        word-spacing: 0.2rem;
+    }
+
 
 }
 
